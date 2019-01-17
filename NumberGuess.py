@@ -34,7 +34,7 @@ while guess_min != number_max:
 
         # ask if it's the lower number
         response = input("Is your number " + str(guess_min) + "? ")
-        if response[0].lower() == 'y':
+        if len(response) != 0 and response[0].lower() == 'y':
             break
         else:
             guess_min = math.ceil(number_max)
